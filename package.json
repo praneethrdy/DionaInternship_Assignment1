@@ -1,0 +1,22 @@
+{
+    "name": "medical-travel-expense-request",
+    "version": "1.0.0",
+    "description": "A dynamic web form for medical and travel expense requests",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx http-server -o",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "medical",
+        "expense",
+        "form",
+        "wcb",
+        "dynamic"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    }
+}

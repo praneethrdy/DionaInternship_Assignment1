@@ -1,0 +1,318 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #005587;
+    --border-color: #ccc;
+    --table-header-bg: #f5f5f5;
+    --error-color: #ff0000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.page {
+    background-color: white;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto 20px;
+    padding: 20mm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    page-break-after: always;
+}
+
+#page2 {
+    page-break-before: always;
+}
+
+/* Header styles */
+header {
+    margin-bottom: 30px;
+}
+
+/* Header Grid Layout */
+.header-grid {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    gap: 0;
+    margin-bottom: 30px;
+    align-items: start;
+}
+
+.logo-column {
+    padding-right: 20px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.address-column {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.address-column p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.title-column {
+    text-align: right;
+    padding-top: 5px;
+}
+
+.title-column h1 {
+    color: var(--primary-blue);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.claim-box {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 4px 12px;
+}
+
+.claim-box span {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--primary-blue);
+    font-size: 24px;
+    margin: 0;
+}
+
+.claim-number {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+/* Main content styles */
+.requester-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--primary-blue);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 6px 8px;
+    text-align: left;
+    font-size: 14px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+}
+
+/* Mileage table specific adjustments */
+.mileage table td,
+.mileage table th {
+    height: 30px;
+    padding: 5px 8px;
+}
+
+/* Notes and additional info */
+.note {
+    font-size: 12px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+/* Specific style for mileage note */
+.mileage .note {
+    font-style: normal;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+/* Keep other note styles italic */
+.bus-taxi .note {
+    font-style: italic;
+}
+
+/* Table cell adjustments for specific sections */
+.prescription-drugs td,
+.otc-drugs td,
+.medical-supplies td,
+.parking td,
+.mileage td {
+    height: 26px;
+    vertical-align: middle;
+}
+
+.prescription-drugs th,
+.otc-drugs th,
+.medical-supplies th,
+.parking th,
+.mileage th {
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Adjust spacing between sections */
+.prescription-drugs,
+.otc-drugs,
+.medical-supplies,
+.parking,
+.mileage {
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    position: absolute;
+    bottom: 20mm;
+    width: calc(100% - 40mm);
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #333;
+    font-size: 12px;
+}
+
+.worker-app-id {
+    text-align: left;
+}
+
+.submission-info {
+    text-align: right;
+}
+
+.submission-info div {
+    margin-bottom: 2px;
+}
+
+.page-number {
+    margin-top: 4px;
+}
+
+/* Print styles */
+@media print {
+    .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    #page2 {
+        page-break-before: always;
+    }
+
+    body {
+        background: none;
+        padding: 0;
+    }
+}
+
+/* Bus or Taxi Fare section styles */
+.bus-taxi h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.bus-taxi table {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bus-taxi th,
+.bus-taxi td {
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.bus-taxi th {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.privacy-notice {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.privacy-notice input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.privacy-notice label {
+    font-size: 14px;
+}
+
+.privacy-link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Footer styles for page 2 */
+.page-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666;
+}

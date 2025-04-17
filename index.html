@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical & Travel Expense Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page" id="page1">
+        <div class="header-grid">
+            <div class="logo-column">
+                <img src="assets/wcb-logo.png" alt="Workers Compensation Board of Manitoba" class="logo">
+            </div>
+            <div class="address-column">
+                <p>333 Broadway</p>
+                <p>Winnipeg, MB R3C 4W3</p>
+                <p>Phone: (204) 954-4321</p>
+                <p>Toll Free: 1-855-954-4321</p>
+                <p>wcb.mb.ca</p>
+            </div>
+            <div class="title-column">
+                <h1>Medical & Travel Expense Request</h1>
+                <div class="claim-box">
+                    <span>Claim No. 20042047</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="requester-info">
+            <span class="name">Madeleine Willson</span> requested reimbursement for the following medical and/or travel
+            expenses:
+        </div>
+
+        <main>
+            <section class="prescription-drugs">
+                <h2>Prescription Drugs</h2>
+                <table id="prescriptionTable">
+                    <thead>
+                        <tr>
+                            <th>Drug Name</th>
+                            <th>Prescription Date</th>
+                            <th>Date Purchased</th>
+                            <th>Healthcare Provider Name</th>
+                            <th>Paid Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section class="otc-drugs">
+                <h2>Over-the-Counter Drugs</h2>
+                <table id="otcTable">
+                    <thead>
+                        <tr>
+                            <th>Drug Name</th>
+                            <th>Date Purchased</th>
+                            <th>Paid Amount</th>
+                            <th>Seller's Name</th>
+                            <th>Reason for Purchasing</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section class="medical-supplies">
+                <h2>Bandages, Braces or Other Medical Supplies</h2>
+                <table id="suppliesTable">
+                    <thead>
+                        <tr>
+                            <th>Item Purchased</th>
+                            <th>Date Purchased</th>
+                            <th>Was this Prescribed?</th>
+                            <th>Healthcare Provider Name</th>
+                            <th>Paid Amount</th>
+                            <th>Seller's Name</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section class="parking">
+                <h2>Parking for Medical Appointments</h2>
+                <table id="parkingTable">
+                    <thead>
+                        <tr>
+                            <th>Address of Healthcare Provider/Medical Facility</th>
+                            <th>Date</th>
+                            <th>Paid Amount</th>
+                            <th>Meter Used?</th>
+                            <th>Meter Number</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section class="mileage">
+                <h2>Mileage to Medical Appointments</h2>
+                <p class="note">The WCB will generally reimburse only those transportation costs which are in excess of
+                    costs that would be incurred by the worker while travelling to and from work.</p>
+                <table id="mileageTable">
+                    <thead>
+                        <tr>
+                            <th>Appointment Date</th>
+                            <th>Address of Healthcare Provider/Medical Facility</th>
+                            <th>Address of Workplace</th>
+                            <th>Number of km (Round Trip)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <div class="worker-app-id">Worker App ID: 712041</div>
+                <div class="submission-info">
+                    <div>Submitted: March 28, 2024 20:43</div>
+                    <div class="page-number">Page 1 of 2</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="page" id="page2">
+        <main>
+            <section class="bus-taxi">
+                <h2>Bus or Taxi Fare for Medical Appointments*</h2>
+                <p class="note">*Note: Pre-approval is required from your WCB representative to claim taxi fare(s).</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Appointment Date</th>
+                            <th>Address of Starting Point</th>
+                            <th>Address of Healthcare Provider/Medical Facility</th>
+                            <th>Bus or Taxi (indicate one)</th>
+                            <th>Total Fare Paid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>March 28, 2024</td>
+                            <td></td>
+                            <td>HSC Winnipeg Women's Hospital, 665 William Ave, Winnipeg MB R3E 0Z2, Canada</td>
+                            <td>Bus</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>March 27, 2024</td>
+                            <td>25 Furby St, Winnipeg MB R3C2A2, Canada</td>
+                            <td>440 Edmonton St, Winnipeg MB R3B 2M4, Canada</td>
+                            <td>Taxi</td>
+                            <td>$15.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="privacy-notice">
+                    <input type="checkbox" id="privacy-checkbox" checked>
+                    <label for="privacy-checkbox">I understand that the <a href="#" class="privacy-link">Privacy
+                            Notice</a> applies to the personal information collected in this document.</label>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <div class="worker-app-id">Worker App ID: 712041</div>
+                <div class="submission-info">
+                    <div>Submitted: March 28, 2024 20:43</div>
+                    <div class="page-number">Page 2 of 2</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
